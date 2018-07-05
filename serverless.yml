@@ -1,0 +1,26 @@
+service: interrogator
+
+provider:
+  name: aws
+  profile: jdl
+  region: us-east-1
+  runtime: nodejs8.10
+  stage: ${opt:stage, 'dev'}
+
+
+package:
+#  include:
+#    - include-me.js
+#    - include-me-dir/**
+#  exclude:
+#    - exclude-me.js
+#    - exclude-me-dir/**
+
+functions:
+  slackEvent:
+    handler: slackHandler.challenge
+    name: ${self:provider.stage}-slackEvent
+    events:
+      - http:
+          path: events
+          method: post

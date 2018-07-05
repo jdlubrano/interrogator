@@ -1,0 +1,19 @@
+{
+  "name": "interrogator",
+  "version": "0.0.1",
+  "description": "The Interrogator Slack app",
+  "main": "slackHandler.js",
+  "scripts": {
+    "test": "echo 'No tests'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdlubrano/interrogator.git"
+  },
+  "author": "Joel Lubrano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdlubrano/interrogator/issues"
+  },
+  "homepage": "https://github.com/jdlubrano/interrogator#readme"
+}
