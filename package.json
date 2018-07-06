@@ -4,7 +4,8 @@
   "description": "The Interrogator Slack app",
   "main": "slackHandler.js",
   "scripts": {
-    "test": "echo 'No tests'"
+    "test": "mocha",
+    "test:watch": "mocha --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/jdlubrano/interrogator/issues"
   },
-  "homepage": "https://github.com/jdlubrano/interrogator#readme"
+  "homepage": "https://github.com/jdlubrano/interrogator#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "sinon": "^6.1.2"
+  },
+  "dependencies": {
+    "config": "^1.30.0"
+  }
 }
